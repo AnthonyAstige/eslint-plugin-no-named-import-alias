@@ -6,9 +6,9 @@ export const rules = {
 
 export const configs = {
   recommended: {
-    plugins: ["your-plugin"],
+    plugins: ["eslint-plugin-no-named-import-alias"],
     rules: {
-      "your-plugin/no-import-as": "error",
+      "eslint-plugin-no-named-import-alias/no-import-as": "error",
     },
   },
 };
