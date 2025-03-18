@@ -4,15 +4,13 @@ type MessageIds = "noImportAs";
 type Options = [];
 
 export const noImportAsRule = ESLintUtils.RuleCreator(
-  (name) =>
-    `https://github.com/your-repo/eslint-plugin-your-plugin/blob/main/docs/rules/${name}.md`,
+  () => `https://github.com/AnthonyAstige/eslint-plugin-no-named-import-alias`,
 )({
   name: "no-import-as",
   meta: {
     type: "suggestion",
     docs: {
       description: "Disallow using 'as' keyword in import statements",
-      recommended: "strict",
     },
     messages: {
       noImportAs:
