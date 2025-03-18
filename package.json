@@ -6,7 +6,9 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pub": "npm run build && npm publish"
   },
   "repository": {
     "type": "git",
@@ -24,7 +26,7 @@
     "@typescript-eslint/rule-tester": "^8.26.1",
     "@typescript-eslint/utils": "^8.26.1",
     "eslint": "*",
-    "typescript": "*"
+    "typescript": "^5.8.2"
   },
   "peerDependencies": {
     "@typescript-eslint/parser": "^8.26.1",
