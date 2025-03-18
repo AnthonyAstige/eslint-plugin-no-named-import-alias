@@ -18,5 +18,17 @@
     "url": "https://github.com/AnthonyAstige/eslint-plugin-no-named-import-alias/issues"
   },
   "homepage": "https://github.com/AnthonyAstige/eslint-plugin-no-named-import-alias#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "@typescript-eslint/parser": "*",
+    "@typescript-eslint/rule-tester": "^8.26.1",
+    "@typescript-eslint/utils": "^8.26.1",
+    "eslint": "*",
+    "typescript": "*"
+  },
+  "peerDependencies": {
+    "@typescript-eslint/parser": "^8.26.1",
+    "eslint": "^9.22.0",
+    "typescript": "^5.8.2"
+  }
 }
