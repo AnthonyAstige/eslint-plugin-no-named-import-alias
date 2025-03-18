@@ -22,7 +22,12 @@ export const noImportAsRule = ESLintUtils.RuleCreator(
   create(context) {
     return {
       ImportSpecifier(node: TSESTree.ImportSpecifier) {
-        if (node.imported.name !== node.local.name) {
+        const importedName =
+          node.imported.type === "Identifier"
+            ? node.imported.name
+            : node.imported.value;
+
+        if (importedName !== node.local.name) {
           context.report({
             node,
             messageId: "noImportAs",
