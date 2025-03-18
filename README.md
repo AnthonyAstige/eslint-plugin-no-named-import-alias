@@ -43,7 +43,6 @@ import { foo } from "module";
 
 Using direct named imports:
 
-- Improves code readability
-- Makes refactoring easier
-- Reduces cognitive overhead
-- Maintains consistency across the codebase
+- Easier to search for uses in codebase
+- Maintains codebase consistency
+- Reduces indirection and hence cognitive overhead
