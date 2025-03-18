@@ -1,6 +1,6 @@
 import { TSESTree, ESLintUtils } from "@typescript-eslint/utils";
 
-export const noImportAsRule = ESLintUtils.RuleCreator(
+const noImportAsRule = ESLintUtils.RuleCreator(
   () => `https://github.com/AnthonyAstige/eslint-plugin-no-named-import-alias`,
 )({
   name: "no-import-as",
@@ -34,3 +34,5 @@ export const noImportAsRule = ESLintUtils.RuleCreator(
     };
   },
 });
+
+export { noImportAsRule };
