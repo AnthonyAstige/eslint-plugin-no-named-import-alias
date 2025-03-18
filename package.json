@@ -1,0 +1,22 @@
+{
+  "name": "eslint-plugin-no-named-import-alias",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnthonyAstige/eslint-plugin-no-named-import-alias.git"
+  },
+  "author": "Anthony Astige",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnthonyAstige/eslint-plugin-no-named-import-alias/issues"
+  },
+  "homepage": "https://github.com/AnthonyAstige/eslint-plugin-no-named-import-alias#readme",
+  "description": ""
+}
