@@ -1,8 +1,5 @@
 import { TSESTree, ESLintUtils } from "@typescript-eslint/utils";
 
-type MessageIds = "noImportAs";
-type Options = [];
-
 export const noImportAsRule = ESLintUtils.RuleCreator(
   () => `https://github.com/AnthonyAstige/eslint-plugin-no-named-import-alias`,
 )({
