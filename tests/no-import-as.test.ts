@@ -4,10 +4,7 @@ const rule = require(
   path.join(__dirname, "../dist/rules/no-import-as.js"),
 ).noImportAsRule;
 
-const ruleTester = new RuleTester({
-  parser: require.resolve("@typescript-eslint/parser"),
-  parserOptions: { ecmaVersion: 2015, sourceType: "module" },
-});
+const ruleTester = new RuleTester();
 
 ruleTester.run("no-import-as", rule, {
   valid: [
