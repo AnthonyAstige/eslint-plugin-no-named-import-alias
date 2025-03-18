@@ -21,14 +21,6 @@ Add the plugin to your ESLint configuration:
 }
 ```
 
-Or use the recommended configuration:
-
-```json
-{
-  "extends": ["plugin:eslint-plugin-no-named-import-alias/recommended"]
-}
-```
-
 ## Rules
 
 ### no-import-as
@@ -36,18 +28,21 @@ Or use the recommended configuration:
 Disallows using the `as` keyword in import statements, enforcing direct named imports.
 
 ❌ Incorrect:
+
 ```typescript
-import { foo as bar } from 'module';
+import { foo as bar } from "module";
 ```
 
 ✅ Correct:
+
 ```typescript
-import { foo } from 'module';
+import { foo } from "module";
 ```
 
 ## Why?
 
 Using direct named imports:
+
 - Improves code readability
 - Makes refactoring easier
 - Reduces cognitive overhead
